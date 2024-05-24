@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+    --footer-color:#f3f1f1
+}
+
+
+
+body{
+    font-family: var(--font-family) !important;
+}
+.network{
+     position: fixed;
+     right: 40%;
+     z-index: 99999;
+     box-shadow: var(--shadow);
+     background-color: #0aad0a;
+     padding: 15px;
+     color: white;
+     animation-name: trans;
+     animation-duration: 3s;
+     animation-timing-function: linear;
+}
+@keyframes trans {
+        0%{
+           top: 0;
+           opacity: 0;
+}
+
+100%{
+    top: 40px;
+    opacity: 1;
+}
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+
+.btn-border
+{
+    border: 1px solid var(--main-color);
+}
+.cursor-pointer
+{   
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+    -webkit-transition: transform 1s , opacity 1s;
+    -moz-transition: transform 1s , opacity 1s;
+    -ms-transition: transform 1s , opacity 1s;
+    -o-transition: transform 1s , opacity 1s;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.text-dark-main{
+    color: #13a713;
+    font-weight: bold;
+
+}
+.brd{
+    border-bottom: 1px solid rgb(223, 222, 222);
+}
+.bg-main
+{
+    
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+footer{
+    background-color: var(--footer-color);
+}
+.foo img{
+    width: 10%;
+}
