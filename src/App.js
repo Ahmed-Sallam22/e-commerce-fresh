@@ -7,7 +7,7 @@ import ProductDetails from './Components/ProductDetails/ProductDetails'
 import Register from './Components/Register/Register'
 import Categories from './Components/Categories/Categories' 
 import NotFound from './Components/NotFound/NotFound' 
-import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import jwtDecode from 'jwt-decode'
@@ -27,9 +27,6 @@ import ResetPassword from './Components/ResetPassword/ResetPassword'
 
 
 export default function App() {
-  const notify = (mess,type) =>{ 
-    toast[type](mess);
-    };
 
 
   useEffect(()=>{

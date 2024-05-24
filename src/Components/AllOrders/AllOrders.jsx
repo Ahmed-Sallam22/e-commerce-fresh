@@ -1,5 +1,4 @@
 import React, {  useContext, useEffect } from 'react'
-import styles from './AllOrders.module.css'
 import axios from 'axios'
 import { useState } from 'react'
 import { Helmet } from 'react-helmet'

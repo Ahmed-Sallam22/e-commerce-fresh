@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './About.module.css'
 import { Helmet } from 'react-helmet'
 
 export default function About() {
